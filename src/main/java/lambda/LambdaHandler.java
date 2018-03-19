@@ -54,9 +54,19 @@ public class LambdaHandler implements RequestHandler<AwsStatusCheckerConfig, Che
 		
 			// load when we last checked 
 			String strDate = S3StringReader.getString(s3, bucket, LAST_CHECKED, false);
-			Date dtLastChecked = new Date(Long.parseLong(strDate));
+			
+			Date dtLastChecked = null;
+			if (strDate != null)
+			{
+				dtLastChecked = new Date(Long.parseLong(strDate));
+			}
+			else
+			{
+				dtLastChecked = new Date(0L);
+			}
+			
 			input.setLastChecked(dtLastChecked);
-
+			
 			AwsStatusChecker checker = new AwsStatusChecker(input);
 
 			CheckerStats stats = checker.performCheck();

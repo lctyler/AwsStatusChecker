@@ -24,6 +24,8 @@ public class S3StringReader
 			{
 				throw e;
 			}
+			// was not required, but we know object is null . 
+			return null;
 		}
 
 		InputStream objectData = object.getObjectContent();
