@@ -17,4 +17,10 @@ public class CheckerStats
 		private AtomicInteger itemsFiltered = new AtomicInteger();
 		private AtomicInteger postsFailed = new AtomicInteger();
 		
+		@Override
+		public String toString()
+		{
+			return "CheckerStats [lastChecked=" + lastChecked + ", postsSent=" + postsSent + ", statusItemsRead="
+					+ statusItemsRead + ", itemsFiltered=" + itemsFiltered + ", postsFailed=" + postsFailed + "]";
+		}	
 }

@@ -76,6 +76,7 @@ public class LambdaHandler implements RequestHandler<AwsStatusCheckerConfig, Che
 
 			s3.putObject(bucket, LAST_CHECKED, Long.toString(stats.getLastChecked().getTime()));
 
+			logger.info("Stats: " + stats.toString());
 			return stats;
 		} catch (Throwable t)
 		{
