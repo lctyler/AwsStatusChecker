@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Amazon Web Services Service Status</title>
+    <link>http://status.aws.amazon.com/</link>
+    <link rel="alternate" href="http://status.aws.amazon.com/rss/all.rss" type="application/rss+xml" title="Amazon Web Services Status Feed"/>
+    <title type="text">Current service status feed for Amazon Web Services.</title>
+    <language>en-us</language>
+    <pubDate>Sat,  3 Mar 2018 04:06:15 PST</pubDate>
+    <updated>Sat,  3 Mar 2018 04:06:15 PST</updated>
+    <generator>AWS Service Health Dashboard RSS Generator</generator>
+    <ttl>5</ttl>
+
+	 
+	 <item>
+	  <title type="text">Service is operating normally: [RESOLVED] Network Connectivity</title>
+	  <link>http://status.aws.amazon.com/</link>
+	  <pubDate>Fri,  2 Mar 2018 10:24:00 PST</pubDate>
+	  <guid>http://status.aws.amazon.com/#internetconnectivity-us-east-1_1520015040</guid>
+	  <description>Between 6:23 AM and 6:32 AM PST and between 8:11 AM and 8:21 AM PST, customers in the US-EAST-1 Region may have experienced Internet connectivity issues. The root cause of this issue was a loss of power in one of our network peering facilities. Our network is designed to be fully redundant with multiple independent peering facilities in every region. Some customers experienced elevated latency and packet loss while the network rerouted affected traffic to these unaffected network peering facilities. Some packet loss was also observed as we restored traffic to the affected network peering facility. The issue has been resolved and the service is operating normally.</description>
+	 </item>
+         
+	 <item>
+	  <title type="text">Service is operating normally: [RESOLVED] Network Connectivity</title>
+	  <link>http://status.aws.amazon.com/</link>
+	  <pubDate>Fri,  2 Mar 2018 11:21:07 PST</pubDate>
+	  <guid>http://status.aws.amazon.com/#directconnect-us-east-1_1520018467</guid>
+	  <description>Between 6:23 AM and 10:26 AM PST on March 2, 2018, some customers in the CoreSite VA1 & VA2 (Reston, VA) Direct Connect location and the Equinix DC1 - DC6 & DC10 - DC12 (Ashburn, VA) Direct Connect location experienced a connection loss to the US-EAST-1 Region. The issue has been resolved and the service is operating normally.</description>
+	 </item>
+         
+	 <item>
+	  <title type="text">Informational message: Network Connectivity</title>
+	  <link>http://status.aws.amazon.com/</link>
+	  <pubDate>Fri,  2 Mar 2018 09:43:25 PST</pubDate>
+	  <guid>http://status.aws.amazon.com/#directconnect-us-east-1_1520012605</guid>
+	  <description>Connections in the CoreSite VA1 & VA2 (Reston, VA) location, and some connections in the Equinix DC1 - DC6 & DC10 - DC12 (Ashburn, VA) location are inactive. Inactive connections are not receiving routes advertised from Direct Connect routers. We are now working to restore service on these Direct Connect connections. The AWS VPN service is operating normally and may be an alternative for some workloads.</description>
+	 </item>
+         
+	 <item>
+	  <title type="text">Informational message: Network Connectivity</title>
+	  <link>http://status.aws.amazon.com/</link>
+	  <pubDate>Fri,  2 Mar 2018 08:03:40 PST</pubDate>
+	  <guid>http://status.aws.amazon.com/#directconnect-us-east-1_1520006620</guid>
+	  <description>We continue to work towards resolving the increased packet loss impacting AWS Direct Connect connectivity to the US-EAST-1 Region. Direct Connect connections from the Equinix DC1 - DC6 & DC10 - DC12, Ashburn, VA and CoreSite VA1 & VA2, Reston, VA locations are affected by this issue.</description>
+	 </item>
+         
+	 <item>
+	  <title type="text">Informational message: Network Connectivity</title>
+	  <link>http://status.aws.amazon.com/</link>
+	  <pubDate>Fri,  2 Mar 2018 07:29:17 PST</pubDate>
+	  <guid>http://status.aws.amazon.com/#directconnect-us-east-1_1520004557</guid>
+	  <description>We are investigating increased packet loss possibly impacting some AWS Direct Connect customers in the US-EAST-1 Region.</description>
+	 </item>
+         
+	 <item>
+	  <title type="text">Service is operating normally: [RESOLVED] Elevated DNS Resolution Errors</title>
+	  <link>http://status.aws.amazon.com/</link>
+	  <pubDate>Thu,  1 Mar 2018 16:12:00 PST</pubDate>
+	  <guid>http://status.aws.amazon.com/#ec2-eu-central-1_1519949520</guid>
+	  <description>Between 2:41 PM and 2:56 PM PST some EC2 instances experienced elevated DNS resolution errors in the EU-CENTRAL-1 Region. As a result of this, some AWS services experienced elevated errors and increased latency. The issue has been resolved and the service is operating normally.</description>
+	 </item>
+         
+	 <item>
+	  <title type="text">Service is operating normally: [RESOLVED] Elevated DNS Resolution Errors</title>
+	  <link>http://status.aws.amazon.com/</link>
+	  <pubDate>Thu,  1 Mar 2018 16:08:00 PST</pubDate>
+	  <guid>http://status.aws.amazon.com/#ec2-eu-west-1_1519949280</guid>
+	  <description>Between 2:41 PM and 2:56 PM PST some EC2 instances experienced elevated DNS resolution errors in the EU-WEST-1 Region. As a result of this, some AWS services experienced elevated errors and increased latency. The issue has been resolved and the service is operating normally.</description>
+	 </item>
+         
+	 <item>
+	  <title type="text">Service is operating normally: [RESOLVED] Increased Launch Error Rates</title>
+	  <link>http://status.aws.amazon.com/</link>
+	  <pubDate>Thu,  1 Mar 2018 11:30:00 PST</pubDate>
+	  <guid>http://status.aws.amazon.com/#ec2-us-west-2_1519932600</guid>
+	  <description>We have resolved the issue affecting new launches of C5 and M5 instance types in a single Availability Zone in the US-WEST-2 Region. Existing instances were not affected. The issue has been resolved and the service is operating normally.</description>
+	 </item>
+         
+	 <item>
+	  <title type="text">Service is operating normally: [RESOLVED] Increased Launch Error Rates</title>
+	  <link>http://status.aws.amazon.com/</link>
+	  <pubDate>Thu,  1 Mar 2018 10:47:00 PST</pubDate>
+	  <guid>http://status.aws.amazon.com/#ec2-us-west-2_1519930020</guid>
+	  <description>We can confirm increased error rates for new launches of C5 and M5 instance types in a single Availability Zone in the US-WEST-2 Region. We have identified the root cause and are working toward full resolution. In the interim, we recommend customers launch their instances to an alternate Availability Zone. </description>
+	 </item>
+         
+	 <item>
+	  <title type="text">Service is operating normally: [RESOLVED] Increased Launch Error Rates</title>
+	  <link>http://status.aws.amazon.com/</link>
+	  <pubDate>Thu,  1 Mar 2018 10:21:00 PST</pubDate>
+	  <guid>http://status.aws.amazon.com/#ec2-us-west-2_1519928460</guid>
+	  <description>We are investigating increased error rates for new launches of C5 and M5 instance types in a single Availability Zone in the US-WEST-2 Region.</description>
+	 </item>
+         
+	 <item>
+	  <title type="text">Informational message: [RESOLVED] Elevated Console and API Error Rates</title>
+	  <link>http://status.aws.amazon.com/</link>
+	  <pubDate>Fri, 23 Feb 2018 02:57:02 PST</pubDate>
+	  <guid>http://status.aws.amazon.com/#cloudfront_1519383422</guid>
+	  <description>Between 1:31 AM and 2:18 AM PST, we experienced elevated error rates for the CloudFront Management Console and API calls to manage distribution configurations and invalidations. The issue has been resolved and the service is operating normally. </description>
+	 </item>
+         
+	 <item>
+	  <title type="text">Informational message: Increased Invoke API Error Rates</title>
+	  <link>http://status.aws.amazon.com/</link>
+	  <pubDate>Fri, 16 Feb 2018 17:39:23 PST</pubDate>
+	  <guid>http://status.aws.amazon.com/#apigateway-us-gov-west-1_1518831563</guid>
+	  <description>Between 4:03 PM and 4:57 PM PST we experienced increased API error rates and latencies in the US-GOV-WEST-1 Region. The issue has been resolved and the service is operating normally. </description>
+	 </item>
+         
+	 <item>
+	  <title type="text">Service is operating normally: [RESOLVED] Increased Error Rates</title>
+	  <link>http://status.aws.amazon.com/</link>
+	  <pubDate>Thu,  8 Feb 2018 12:56:31 PST</pubDate>
+	  <guid>http://status.aws.amazon.com/#autoscaling-us-gov-west-1_1518123391</guid>
+	  <description>
+Between 11:43 AM and 12:48 PM PDT we experienced increased error rates for Autoscaling API calls in the US-GOV-WEST-1 Region. The issue has been resolved and the service is operating normally.</description>
+	 </item>
+         
+	 <item>
+	  <title type="text">Informational message: Increased Error Rates</title>
+	  <link>http://status.aws.amazon.com/</link>
+	  <pubDate>Thu,  8 Feb 2018 12:30:22 PST</pubDate>
+	  <guid>http://status.aws.amazon.com/#autoscaling-us-gov-west-1_1518121822</guid>
+	  <description>We are investigating increased error rates for Autoscaling API calls in the US-GOV-WEST-1 Region.</description>
+	 </item>
+         
+	 <item>
+	  <title type="text">Informational message: [RESOLVED] Increased API Error Rates</title>
+	  <link>http://status.aws.amazon.com/</link>
+	  <pubDate>Wed, 31 Jan 2018 08:49:10 PST</pubDate>
+	  <guid>http://status.aws.amazon.com/#ec2-ap-south-1_1517417350</guid>
+	  <description>Between 7:41 AM and 8:04 AM PST we experienced increased API error rates in the AP-SOUTH-1 Region. The issue has been resolved and the service is operating normally.</description>
+	 </item>
+        
+  </channel>
+</rss>
