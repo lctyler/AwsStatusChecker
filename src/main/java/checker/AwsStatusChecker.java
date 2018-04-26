@@ -11,6 +11,7 @@ import java.util.concurrent.TimeUnit;
 import model.StatusItem;
 import reader.AwsStatusReader;
 import reader.AwsStatusTimeFilter;
+import slack.SlackConfig.NotificationLevel;
 import slack.SlackPost;
 import slack.SlackPostClient;
 
@@ -52,10 +53,16 @@ public class AwsStatusChecker
 					{
 						try
 						{
-
-							SlackPost post = SlackPost.builder().channel(config.getSlackConfig().getChannel())
-									.username(config.getSlackConfig().getUserName()).text(item.toString())
-									.icon_emoji(item.isResolved() ? SlackPost.GREEN_CHECK_EMOJI : SlackPost.X_EMOJI).build();
+							NotificationLevel notification = config.getSlackConfig().getNotificationLevel(); 
+							// first iteration let's just post to @channel if the item is new. 
+							String strNotification = notification != null && !item.isResolved() ? notification.getText() : null;
+							SlackPost post = SlackPost.builder()
+									.channel(config.getSlackConfig().getChannel())
+									.link_names("true")
+									.username(config.getSlackConfig().getUserName())
+									.text(strNotification + " " + item.toString())
+									.icon_emoji(item.isResolved() ? SlackPost.GREEN_CHECK_EMOJI : SlackPost.X_EMOJI)
+									.build();
 
 							SlackPostClient client = new SlackPostClient(config.getSlackConfig());
 							client.sendSlackPost(post);

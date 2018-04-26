@@ -10,12 +10,13 @@ public class TestSlackPostClient {
 		SlackPost post = SlackPost.builder()
 				.channel("#awsstatus")
 				.icon_emoji(":grin:")
-				.text("This is a test")
+				.link_names("true")
+				.text("@channel This is a test")
 				.username("test")
 				.build();
 		
 		SlackConfig config = SlackConfig.builder()
-				.url("https://hooks.slack.com/services/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").build();
+				.url("webhook goes here").build();
 		
 		
 		SlackPostClient client = new SlackPostClient(config);

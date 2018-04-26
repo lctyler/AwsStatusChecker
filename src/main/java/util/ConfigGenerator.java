@@ -9,6 +9,7 @@ import checker.AwsStatusCheckerConfig;
 import reader.AwsStatusReaderConfig;
 import reader.AwsStatusReaderConfig.ReaderType;
 import slack.SlackConfig;
+import slack.SlackConfig.NotificationLevel;
 
 public class ConfigGenerator
 {
@@ -20,6 +21,7 @@ public class ConfigGenerator
 				.channel("#awsstatus")
 				.connectionTimeout(5000)
 				.socketReadTimeout(5000)
+				.notificationLevel(NotificationLevel.AT_HERE)
 				.userName("AwsStatusBot").build();
 		
 		AwsStatusReaderConfig readerConfig = AwsStatusReaderConfig.builder()
