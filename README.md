@@ -1,6 +1,6 @@
 # AwsStatusChecker
 
-![slack](https://user-images.githubusercontent.com/4110851/39289300-6a635682-48e0-11e8-9a24-f7777ff829da.PNG)
+![slack2](https://user-images.githubusercontent.com/4110851/39290669-410b292c-48e5-11e8-8e8c-dc8ad0a85c8e.PNG)
 
 
 ## Why would I need this?
